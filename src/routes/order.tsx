@@ -68,7 +68,7 @@ function OrderPage() {
       user_id: user?.id ?? null,
       table_number: Number(table),
       items: lines,
-      total: total.toFixed(2),
+      total: Number(total.toFixed(2)),
       notes: notes || null,
     });
     setSubmitting(false);
