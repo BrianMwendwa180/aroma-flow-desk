@@ -59,7 +59,7 @@ function DashboardLayout() {
             {tabs.map((t) => {
               const active = t.exact ? pathname === t.to : pathname.startsWith(t.to);
               return (
-                <Link key={t.to} to={t.to} className={cn(
+                <Link key={t.to} to={t.to as "/dashboard"} className={cn(
                   "flex items-center gap-2 rounded-full px-4 py-1.5 text-sm transition-colors",
                   active ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
                 )}>
