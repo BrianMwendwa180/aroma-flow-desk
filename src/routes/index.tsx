@@ -7,8 +7,8 @@ import hero from "@/assets/cafe-hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Maison Café — Neighborhood coffee & brunch" },
-      { name: "description", content: "Book a table, explore our menu and prices, and order from your seat at Maison Café." },
+      { title: "Omnireach Café — Neighborhood coffee & brunch" },
+      { name: "description", content: "Book a table, explore our menu and prices, and order from your seat at Omnireach Café." },
     ],
   }),
   component: Home,
@@ -39,7 +39,7 @@ function Home() {
           </div>
           <div className="relative">
             <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-muted">
-              <img src={hero} alt="Maison Café interior with morning light" className="h-full w-full object-cover" />
+              <img src={hero} alt="Omnireach Café interior with morning light" className="h-full w-full object-cover" />
             </div>
             <div className="absolute -bottom-4 -left-4 hidden rounded-xl border border-border bg-card p-4 shadow-sm md:block">
               <div className="font-display text-2xl">112</div>

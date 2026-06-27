@@ -7,7 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
-      { title: "Menu & prices — Maison Café" },
+      { title: "Menu & prices — Omnireach Café" },
       { name: "description", content: "Espresso, brew bar, pastries, and brunch — see every item and price." },
     ],
   }),

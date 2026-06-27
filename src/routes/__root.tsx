@@ -50,9 +50,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Maison Café — Book a table & explore our menu" },
+      { title: "Omnireach Café — Book a table & explore our menu" },
       { name: "description", content: "Modern neighborhood café. Reserve a table, browse the menu and prices, and order from your seat." },
-      { property: "og:title", content: "Maison Café" },
+      { property: "og:title", content: "Omnireach Café" },
       { property: "og:description", content: "Reserve a table, browse the menu and prices, and order from your seat." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

@@ -6,7 +6,7 @@ import { Calendar, Coffee, ClipboardList } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/dashboard")({
-  head: () => ({ meta: [{ title: "Staff dashboard — Maison Café" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({ meta: [{ title: "Staff dashboard — Omnireach Café" }, { name: "robots", content: "noindex" }] }),
   component: DashboardLayout,
 });
 

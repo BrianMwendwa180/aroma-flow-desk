@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { format } from "date-fns";
 
 export const Route = createFileRoute("/my-bookings")({
-  head: () => ({ meta: [{ title: "My bookings — Maison Café" }] }),
+  head: () => ({ meta: [{ title: "My bookings — Omnireach Café" }] }),
   component: MyBookings,
 });
 

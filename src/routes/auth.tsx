@@ -11,7 +11,7 @@ import { useAuth } from "@/lib/auth-context";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/auth")({
-  head: () => ({ meta: [{ title: "Sign in — Maison Café" }] }),
+  head: () => ({ meta: [{ title: "Sign in — Omnireach Café" }] }),
   component: AuthPage,
 });
 

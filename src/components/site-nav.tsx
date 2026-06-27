@@ -10,7 +10,7 @@ export function SiteNav() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2 font-display text-xl">
           <Coffee className="h-5 w-5 text-accent" />
-          <span>Maison Café</span>
+          <span>Omnireach Café</span>
         </Link>
         <nav className="hidden gap-8 text-sm md:flex">
           <Link to="/" activeOptions={{ exact: true }} className="text-muted-foreground transition-colors hover:text-foreground" activeProps={{ className: "text-foreground" }}>Home</Link>
@@ -44,10 +44,10 @@ export function SiteFooter() {
     <footer className="mt-24 border-t border-border/60 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-4 px-4 text-sm text-muted-foreground sm:px-6 md:flex-row md:items-center">
         <div className="flex items-center gap-2 font-display text-base text-foreground">
-          <Coffee className="h-4 w-4 text-accent" /> Maison Café
+          <Coffee className="h-4 w-4 text-accent" /> Omnireach Café
         </div>
         <div>112 Linden Street · Open daily 7am–7pm</div>
-        <div>© {new Date().getFullYear()} Maison Café</div>
+        <div>© {new Date().getFullYear()} Omnireach Café</div>
       </div>
     </footer>
   );

@@ -14,7 +14,7 @@ import { useAuth } from "@/lib/auth-context";
 export const Route = createFileRoute("/order")({
   head: () => ({
     meta: [
-      { title: "Order at your table — Maison Café" },
+      { title: "Order at your table — Omnireach Café" },
       { name: "description", content: "Send your order straight to the bar from your seat." },
     ],
   }),

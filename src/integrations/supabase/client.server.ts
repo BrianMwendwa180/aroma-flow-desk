@@ -29,13 +29,20 @@ function createSupabaseFetch(supabaseKey: string): typeof fetch {
   };
 }
 
+function getSupabaseUrl(projectId: string | undefined, url: string | undefined) {
+  if (url) return url;
+  if (projectId) return `https://${projectId}.supabase.co`;
+  return undefined;
+}
+
 function createSupabaseAdminClient() {
-  const SUPABASE_URL = process.env.SUPABASE_URL;
+  const SUPABASE_PROJECT_ID = process.env.SUPABASE_PROJECT_ID;
+  const SUPABASE_URL = getSupabaseUrl(SUPABASE_PROJECT_ID, process.env.SUPABASE_URL);
   const SUPABASE_SERVICE_ROLE_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
   if (!SUPABASE_URL || !SUPABASE_SERVICE_ROLE_KEY) {
     const missing = [
-      ...(!SUPABASE_URL ? ['SUPABASE_URL'] : []),
+      ...(!SUPABASE_URL ? ['SUPABASE_URL / SUPABASE_PROJECT_ID'] : []),
       ...(!SUPABASE_SERVICE_ROLE_KEY ? ['SUPABASE_SERVICE_ROLE_KEY'] : []),
     ];
     const message = `Missing Supabase environment variable(s): ${missing.join(', ')}. Connect Supabase in Lovable Cloud.`;

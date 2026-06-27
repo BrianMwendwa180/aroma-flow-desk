@@ -14,8 +14,8 @@ import { Calendar, Users, Clock } from "lucide-react";
 export const Route = createFileRoute("/book")({
   head: () => ({
     meta: [
-      { title: "Reserve a table — Maison Café" },
-      { name: "description", content: "Book a table at Maison Café in seconds. Confirmation by our team." },
+      { title: "Reserve a table — Omnireach Café" },
+      { name: "description", content: "Book a table at Omnireach Café in seconds. Confirmation by our team." },
     ],
   }),
   component: BookPage,
