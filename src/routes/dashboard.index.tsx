@@ -25,7 +25,7 @@ function ReservationsPage() {
     },
   });
 
-  async function update(id: string, patch: Record<string, unknown>) {
+  async function update(id: string, patch: { status?: string; table_number?: number | null }) {
     const { error } = await supabase.from("reservations").update(patch).eq("id", id);
     if (error) toast.error(error.message); else { toast.success("Updated"); qc.invalidateQueries({ queryKey: ["staff-reservations"] }); }
   }

@@ -10,11 +10,11 @@ export const Route = createFileRoute("/dashboard")({
   component: DashboardLayout,
 });
 
-const tabs = [
+const tabs: Array<{ to: string; label: string; icon: typeof Calendar; exact?: boolean }> = [
   { to: "/dashboard", label: "Reservations", icon: Calendar, exact: true },
   { to: "/dashboard/requests", label: "Table orders", icon: ClipboardList },
   { to: "/dashboard/menu", label: "Menu", icon: Coffee },
-] as const;
+];
 
 function DashboardLayout() {
   const { user, isStaff, loading } = useAuth();
